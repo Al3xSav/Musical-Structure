@@ -14,7 +14,7 @@ public class ArtistsFragment extends Fragment {
 
     GridView grid;
 
-    String[] artistWeb = {
+    String[] artist = {
             "Armin van Buuren & Vini Vici",
             "Armin van Buuren",
             "High Tribe",
@@ -36,12 +36,12 @@ public class ArtistsFragment extends Fragment {
         // Get the view from activity_artists.xml
         final View v = inflater.inflate(R.layout.activity_artists, container, false);
         grid = (GridView) v.findViewById(R.id.grid);
-        grid.setAdapter(new GridAdapter(v.getContext(), artistWeb, img));
+        grid.setAdapter(new GridAdapter(v.getContext(), artist, img));
         grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(v.getContext(), artistWeb[+position], Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(), artist[+position], Toast.LENGTH_SHORT).show();
             }
         });
         return v;

@@ -9,8 +9,8 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    private String tabTitles[] = new String[] { " Now Playing", "Songs", "Artists" , "Genres" };
     final int PAGE_COUNT = 4;
+    private String tabTitles[] = new String[]{" Now Playing", "Songs", "Artists", "Genres"};
 
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -18,14 +18,15 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        if (position == 0) {return new PlayFragment();}
-
-        else if (position == 1){return new TracksFragment();}
-
-        else if (position == 2) {return new ArtistsFragment();}
-
-        else  {return new GendersFragment();}
-
+        if (position == 0) {
+            return new PlayFragment();
+        } else if (position == 1) {
+            return new TracksFragment();
+        } else if (position == 2) {
+            return new ArtistsFragment();
+        } else {
+            return new GendersFragment();
+        }
     }
 
     @Override

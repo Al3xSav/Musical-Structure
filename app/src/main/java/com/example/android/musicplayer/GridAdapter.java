@@ -8,11 +8,10 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
 public class GridAdapter extends BaseAdapter {
-    private Context context;
     private final String[] artistWeb;
     private final int[] img;
+    private Context context;
 
     public GridAdapter(Context con, String[] artistWeb, int[] img) {
         context = con;

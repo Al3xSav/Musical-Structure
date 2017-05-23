@@ -9,11 +9,9 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
 
-
 public class ArtistsFragment extends Fragment {
 
     GridView grid;
-
     String[] artist = {
             "Armin van Buuren & Vini Vici",
             "Armin van Buuren",
@@ -21,7 +19,6 @@ public class ArtistsFragment extends Fragment {
             "Lady Gaga",
             "Filatov & Karas",
             "Sigma"};
-
     int[] img = {
             R.drawable.great_spirit,
             R.drawable.symphony,

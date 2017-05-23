@@ -7,9 +7,30 @@
 
     <string name="song_name">Current Song Name</string>
     <string name="artist_name">Current Artist Name</string>
+    <string name="load_image">The image is displayed by library Glide</string>
 
     <string name="image_info">Image Info</string>
 
     <string name="start_song">00:00</string>
     <string name="end_song">05:00</string>
+
+    <!-- Strings for every TextView representing my Fragments -->
+    <string name="text_view_tracks">
+        Music Library Fragment will display the list of songs with its artist.
+        This list will be displayed using ListView class and ListAdapter class.
+    </string>
+
+    <string name="text_view_artists">
+        Artist Library Fragment will display the list of artists with an image.
+        This list will be displayed using GridView class and GridAdapter class.
+    </string>
+
+    <string name="text_view_genders">
+        Gender Library Fragment will display the list of artists with an image.
+        This list will be displayed using GridView class and GridAdapter class.
+    </string>
+
+    <string name="text_view_results">
+        Activity result will display the results of the search widget using searchable.xml.
+    </string>
 </resources>

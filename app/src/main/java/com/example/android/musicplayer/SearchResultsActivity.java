@@ -10,7 +10,6 @@ import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.View;
 
-
 public class SearchResultsActivity extends AppCompatActivity {
 
     @Override
@@ -20,7 +19,6 @@ public class SearchResultsActivity extends AppCompatActivity {
 
         FloatingActionButton floatingActionButton = (FloatingActionButton)
                 findViewById(R.id.floatingActionButton);
-
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,14 +34,12 @@ public class SearchResultsActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.options_menu, menu);
-
         SearchManager searchManager =
                 (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         SearchView searchView =
                 (SearchView) menu.findItem(R.id.search).getActionView();
         searchView.setSearchableInfo(
                 searchManager.getSearchableInfo(getComponentName()));
-
         return true;
     }
 

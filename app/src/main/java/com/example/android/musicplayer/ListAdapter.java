@@ -7,20 +7,17 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-
 public class ListAdapter extends BaseAdapter {
 
-    private Context context;
     private final String[] title;
     private final String[] artist;
+    private Context context;
 
     public ListAdapter(Context con, String[] title, String[] artist) {
-
         context = con;
         this.title = title;
         this.artist = artist;
     }
-
 
     @Override
     public int getCount() {

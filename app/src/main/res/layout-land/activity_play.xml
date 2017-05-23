@@ -1,11 +1,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
     android:baselineAligned="false"
-    android:paddingRight="10dp"
+    android:orientation="horizontal"
+    android:paddingBottom="40dp"
     android:paddingLeft="10dp"
-    android:paddingBottom="40dp">
+    android:paddingRight="10dp">
 
 
     <LinearLayout
@@ -15,11 +15,10 @@
         android:padding="10dp">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/glide_image_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="@string/image_info"
-            android:src="@drawable/unknown_song" />
+            android:contentDescription="@string/image_info" />
 
     </LinearLayout>
 
@@ -58,6 +57,15 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="5dp"
                 android:text="@string/artist_name"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/load_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:text="@string/load_image"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textSize="15sp" />
 

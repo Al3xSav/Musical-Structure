@@ -9,8 +9,8 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
-    final int PAGE_COUNT = 4;
-    private String tabTitles[] = new String[]{" Now Playing", "Songs", "Artists", "Genres"};
+    final int PAGE_COUNT = 5;
+    private String tabTitles[] = new String[]{"Playing", "Songs", "Artists", " Albums", "Genres"};
 
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -24,8 +24,10 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
             return new TracksFragment();
         } else if (position == 2) {
             return new ArtistsFragment();
+        } else if (position == 3) {
+            return new AlbumsFragment();
         } else {
-            return new GendersFragment();
+            return new GenresFragment();
         }
     }
 

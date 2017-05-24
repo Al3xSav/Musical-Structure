@@ -4,21 +4,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/text_view_tracks"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:text="@string/text_view_tracks"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="15sp"
-        android:textStyle="bold" />
-
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/text_view_tracks"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:dividerHeight="1dp"

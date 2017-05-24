@@ -60,15 +60,6 @@
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textSize="15sp" />
 
-            <TextView
-                android:id="@+id/load_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/textView2"
-                android:text="@string/load_image"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:textSize="15sp" />
-
         </RelativeLayout>
 
         <RelativeLayout
